@@ -1,6 +1,6 @@
 # The files ...
-So right now, there are 2 files `kali-windowdecorations.tar.gz` and `flatpak-fonts-setup.sh` in here.
-- The first one is just a (Kde Plasma) Window decoration theme I extracted from Kali Linux. (It is compressed as a .tar.gz)
+So right now, there are 2 files `kali-windowdecorations.tar` and `flatpak-fonts-setup.sh` in here.
+- The first one is just a (Kde Plasma) Window decoration theme I extracted from Kali Linux. (It is compressed as a .tar)
 - The second file is just a script to setup flatpak<->system font integration! (It does contain usage Instructions)
 
 # Why are they here!?
