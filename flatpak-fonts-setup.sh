@@ -2,6 +2,9 @@
 
 # Sorry for crappy bash scripting (I am indeed a bash brainlet!)
 
+# Important!
+# You need to have /etc/fonts/local.conf file, an example one is included in this directory!
+
 help_string="Purpose: This Will copy your local (/etc/fonts/local.conf) font configuration file so that it can be recognized by the flatpak app. 
 ----------------------------------------------------------
 Usage: ./flatpak-fonts-setup.sh [Application-id(of your app)]
