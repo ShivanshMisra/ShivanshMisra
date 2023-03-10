@@ -21,6 +21,12 @@ To Setup Fonts for Firefox(org.mozilla.firefox):
 - If it says 'Please run that application Once and Retry!, Or see if it is even installed!', then do so accordingly.
 "
 
+# Check if /etc/fonts/local.conf if present
+if [ ! -f /etc/fonts/local.conf ]; then
+	echo "Sorry you need to have a fontconfig file named 'local.conf' in your /etc/fonts dir for this to work!"
+fi
+# Actual Part
+
 case "$1" in
 	-h|--help) echo $help_string ; exit 0 ;;
 	-*) echo "Only the -h switch is supported!" ; exit 1 ;;
