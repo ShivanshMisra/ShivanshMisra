@@ -28,7 +28,7 @@ fi
 # Actual Part
 
 case "$1" in
-	-h|--help) echo $help_string ; exit 0 ;;
+	-h|--help) echo -e $help_string ; exit 0 ;;
 	-*) echo "Only the -h switch is supported!" ; exit 1 ;;
 	*) 
 		if [[ -z "$1" ]]; then
