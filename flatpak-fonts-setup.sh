@@ -23,7 +23,7 @@ To Setup Fonts for Firefox(org.mozilla.firefox):
 
 # Check if /etc/fonts/local.conf if present
 if [ ! -f /etc/fonts/local.conf ]; then
-	echo "Sorry you need to have a fontconfig file named 'local.conf' in your /etc/fonts dir for this to work!"
+	echo "Sorry you need to have a fontconfig file named 'local.conf' in your /etc/fonts dir for this to work!" ; exit 1
 fi
 # Actual Part
 
