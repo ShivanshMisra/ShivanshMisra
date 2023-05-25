@@ -2,8 +2,9 @@
 <!--
 1. Setting up the fonts
 -> Just Change my-serif, my-sans, my-mono to your favourite Serif, Sans-Serif, Monospace fonts
--> Make sure those fonts are installed!
-2. Reboot the System, to apply the changes...
+-> Also Make sure those fonts are installed!
+2. Place this file as "/etc/fonts/local.conf" or "~/.config/fontconfig/fonts.conf"
+3. Reboot the System, to apply the changes...
 -->
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
