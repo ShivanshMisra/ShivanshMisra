@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @ShivanshMisra
 - 👀 I’m interested in Linux(but not as a programmer or a sysadmin)
-- 🌱 I’m currently learning _static void_
+- 🌱 I’m currently learning \*_static void_\*
 - 📫 How to reach me (don't reach me)
 
 <!---
