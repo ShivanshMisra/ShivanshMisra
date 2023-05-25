@@ -29,6 +29,22 @@ fi
 
 case "$1" in
 	-h|--help) echo -e $help_string ; exit 0 ;;
+	-m|--memoize) 
+		touch "$HOME/.local/share/flatpak-fonts-setup/memo.memo"
+		if [[ ! -z "$2" ]] && [[ -d "$HOME/.var/app/$2" ]]; then
+			echo "$2" >> "$HOME/.local/share/flatpak-fonts-setup/memo.memo" ; echo "Successfully written to the memo!"
+		else 
+			echo "Invalid Input!"
+		fi
+		;;
+	
+	-M|--memorun)
+		touch "$HOME/.local/share/flatpak-fonts-setup/memo.memo"
+		while IFS= read -r line
+		do
+		  mkdir -p "$HOME/.var/app/$line/config/fontconfig" ; cp "/etc/fonts/local.conf" "$HOME/.var/app/$line/config/fontconfig/fonts.conf" ; echo "Done! for $line"
+		done < "$HOME/.local/share/flatpak-fonts-setup/memo.memo"
+		;;
 	-*) echo "Only the -h switch is supported!" ; exit 1 ;;
 	*) 
 		if [[ -z "$1" ]]; then
